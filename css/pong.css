@@ -1,0 +1,29 @@
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: monospace;
+}
+
+#terrain{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    
+    border: 1px solid white;
+    width: 800px;
+    height : 400px;
+    
+}
+
+#balle{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+
+}
