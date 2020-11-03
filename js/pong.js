@@ -5,7 +5,7 @@ let gauche = parseInt($("#balle").css("left"));
 let haut = parseInt($("#balle").css("top"));
 //alert(gauche);
 
-//boucle afin de modifier la position de la balle
+//boucle afin de modifier la position de la balle toutes les 10 millisecondes
 setInterval(function()
 {
     gauche = gauche+1;
