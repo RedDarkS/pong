@@ -3,6 +3,14 @@ body{
     background-color: #000000;
     color: #ffffff;
     font-family: monospace;
+    
+    /** permet de centrer les éléments dans la page **/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #terrain{
