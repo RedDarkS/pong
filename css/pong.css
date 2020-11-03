@@ -15,8 +15,6 @@ body{
 
 #terrain{
     position: relative;
-    top: 50%;
-    left: 50%;
     
     border: 1px solid white;
     width: 800px;
