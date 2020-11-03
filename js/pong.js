@@ -2,7 +2,7 @@
 let largeur = $("#balle").width();
 let gauche = parseInt($("#balle").css("left"));
 let haut = parseInt($("#balle").css("top"));
-alert(gauche);
+//alert(gauche);
 
 setInterval(function(){
     gauche = gauche+1;
