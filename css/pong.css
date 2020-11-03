@@ -1,5 +1,6 @@
 
 body{
+    /** Fond noir, couleur blanche et typographie monospace **/
     background-color: #000000;
     color: #ffffff;
     font-family: monospace;
@@ -13,6 +14,7 @@ body{
   text-align: center;
 }
 
+/** paramêtrage du ou des "objets" terrain **/
 #terrain{
     position: relative;
     
@@ -22,6 +24,7 @@ body{
     
 }
 
+/** paramêtrage du ou des "objets" balle **/
 #balle{
     position: absolute;
     top : 50%;
