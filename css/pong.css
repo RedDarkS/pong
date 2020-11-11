@@ -1,4 +1,4 @@
-
+/** id > class **/
 body
 {
     /** Fond noir, couleur blanche et typographie monospace **/
@@ -6,7 +6,7 @@ body
     color: #ffffff;
     font-family: monospace;
     
-    /** permet de centrer les éléments dans la page **/
+    /** permet de centrer les elements dans la page **/
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -15,7 +15,7 @@ body
     text-align: center;
 }
 
-/** paramêtrage du ou des "objets" terrain **/
+/** parametrage du ou des "objets" terrain **/
 #terrain
 {
     position: relative;
@@ -27,8 +27,11 @@ body
     width: 800px;
     height : 400px;
 }
+.tilt{
+    border-color: rgb(0, 250, 0) !important;
+}
 
-/** paramêtrage du ou des "objets" balle **/
+/** parametrage du ou des "objets" balle **/
 #balle
 {
     position: absolute;
@@ -38,28 +41,27 @@ body
     border-radius: 100%;
     width: 20px;
     height: 20px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
-/** paramêtrage du ou des "objets" raquette **/
-#raquetteGauche
+/** parametrage du ou des "objets" raquette **/
+.raquette
 {
     position: absolute;
-    top : 50%;
+
+    --hauteur: 25%; /** definir une variable **/
+
+    top : calc( 50% - var(--hauteur)/2 ); /** clac, faire des calculs en css // var utiliser la variable **/
+
+    width: 10px;
+    height: var(--hauteur);
+    background-color: #fff;
+}
+#droite
+{
+    right: 1%;
+}
+#gauche
+{
     left: 1%;
-
-    width: 10px;
-    height: 100px;
-    background-color: #fff;
-}
-
-#raquetteDroite
-{
-    position: absolute;
-    top : 50%;
-    left: 98%;
-
-    width: 10px;
-    height: 100px;
-    background-color: #fff;
 }
