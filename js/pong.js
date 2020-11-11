@@ -10,6 +10,7 @@ class Terrain
     constructor($element)
     {
         this.$element = $element;
+
         this.largeur = $element.width();
         this.hauteur = $element.height();
     }
@@ -21,10 +22,16 @@ class Balle
     constructor($element)
     {
         this.$element = $element;
+
+        this.hauteur = $element.height();
+        this.largeur = $element.width();
+
         this.haut = parseInt($element.css("top"));
         this.gauche = parseInt($element.css("left"));
+
         this.vitesseX = 2;
         this.vitesseY = 0.5;
+        this.angle = Math.random()*2*Math.PI;
     }
 
     majHTML()
@@ -34,37 +41,96 @@ class Balle
     }
 }
 
+//Classe de création d'un objet raquette
+class Raquette
+{
+    constructor($element)
+    {
+        this.$element = $element;
+
+        this.gauche = $element.width();
+        this.haut = $element.height();
+
+        this.vitesse = 0.75;
+    }
+
+    majHTML()
+    {
+        this.$element.css("left",raquetteGauche.gauche);
+        this.$element.css("top",raquetteGauche.haut);
+
+        this.$element.css("left",raquetteDroite.gauche);
+        this.$element.css("top",raquetteDroite.haut);
+    }
+}
+
 //on créer un nouvel objet balle et terrain à partir de ceux de HTML/CSS
 let terrain = new Terrain($("#terrain"));
 let balle = new Balle($("#balle"));
+let raquetteGauche = new Raquette($("#raquetteGauche"));
+let raquetteDroite = new Raquette($("#raquetteDroite"));
 
-//boucle afin de modifier la position de la balle toutes les 10 millisecondes
-//les if servent à tester les collisions avec les bordures du terrain, et ainsi de faire rebondir la balle
+//boucle afin de modifier la position de la balle et des raquettes toutes les 10 millisecondes
+//les if servent à tester les collisions avec les bordures du terrain, et ainsi de faire rebondir la balle ou la laquette
 setInterval(function()
 {
-    balle.gauche = balle.gauche + balle.vitesseX;
-    balle.haut = balle.haut + balle.vitesseY;
+    //section balle
+    balle.gauche += Math.cos(balle.angle) * balle.vitesseX;
+    balle.haut += Math.sin(balle.angle) * balle.vitesseY;
     
-    if(balle.gauche > terrain.largeur)
+    if( (balle.gauche + balle.largeur) > terrain.largeur)
     {
-        balle.gauche = terrain.largeur;
-        balle.vitesseX = -balle.vitesseX
+        balle.gauche = terrain.largeur - balle.largeur;
+        balle.vitesseX = -balle.vitesseX;
     }
     if(balle.gauche < 0)
     {
         balle.gauche = 0;
-        balle.vitesseX = -balle.vitesseX
+        balle.vitesseX = -balle.vitesseX;
     }
-    if(balle.haut > terrain.hauteur)
+    if( (balle.haut + balle.hauteur) > terrain.hauteur)
     {
-        balle.haut = terrain.hauteur;
-        balle.vitesseY = -balle.vitesseY
+        balle.haut = terrain.hauteur - balle.hauteur;
+        balle.vitesseY = -balle.vitesseY;
     }
     if(balle.haut < 0)
     {
         balle.haut = 0;
-        balle.vitesseY = -balle.vitesseY
+        balle.vitesseY = -balle.vitesseY;
     }
+
     balle.majHTML();
+
+    //section raquette gauche
+    raquetteGauche.haut += raquetteGauche.vitesse;
+
+    if(raquetteGauche.haut > terrain.hauteur)
+    {
+        raquetteGauche.haut = terrain.hauteur;
+        raquetteGauche.vitesse = -raquetteGauche.vitesse;
+    }
+    if(raquetteGauche.haut < 0)
+    {
+        raquetteGauche.haut = 0;
+        raquetteGauche.vitesse = -raquetteGauche.vitesse;
+    }
+
+    raquetteGauche.majHTML();
+
+    //section raquette droite
+    raquetteDroite.haut += raquetteDroite.vitesse;
+
+    if(raquetteDroite.haut > terrain.hauteur)
+    {
+        raquetteDroite.haut = terrain.hauteur;
+        raquetteDroite.vitesse = -raquetteDroite.vitesse;
+    }
+    if(raquetteDroite.haut < 0)
+    {
+        raquetteDroite.haut = 0;
+        raquetteDroite.vitesse = -raquetteDroite.vitesse;
+    }
+
+    raquetteDroite.majHTML();
     
 }, 10);

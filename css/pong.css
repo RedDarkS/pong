@@ -1,31 +1,37 @@
 
-body{
+body
+{
     /** Fond noir, couleur blanche et typographie monospace **/
     background-color: #000000;
     color: #ffffff;
     font-family: monospace;
     
     /** permet de centrer les éléments dans la page **/
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /** paramêtrage du ou des "objets" terrain **/
-#terrain{
+#terrain
+{
     position: relative;
+
+    border:1px solid #000;
+    border-top-color:#fff;
+    border-bottom-color:#fff;
     
-    border: 1px solid white;
     width: 800px;
     height : 400px;
     
 }
 
 /** paramêtrage du ou des "objets" balle **/
-#balle{
+#balle
+{
     position: absolute;
     top : 50%;
     left: 50%;
@@ -33,6 +39,31 @@ body{
     border-radius: 100%;
     width: 20px;
     height: 20px;
+    background-color: #fff;
+
+}
+
+/** paramêtrage du ou des "objets" raquette **/
+#raquetteGauche
+{
+    position: absolute;
+    top : 50%;
+    left: 1%;
+
+    width: 10px;
+    height: 100px;
+    background-color: #fff;
+
+}
+
+#raquetteDroite
+{
+    position: absolute;
+    top : 50%;
+    left: 98%;
+
+    width: 10px;
+    height: 100px;
     background-color: #fff;
 
 }
