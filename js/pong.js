@@ -48,8 +48,11 @@ class Raquette
     {
         this.$element = $element;
 
-        this.gauche = $element.width();
-        this.haut = $element.height();
+        this.largeur = $element.width();
+        this.hauteur = $element.height();
+
+        this.haut = parseInt($element.css("top"));
+        this.gauche = parseInt($element.css("left"));
 
         this.vitesse = 0.75;
     }
@@ -64,9 +67,11 @@ class Raquette
     }
 }
 
-//on créer un nouvel objet balle et terrain à partir de ceux de HTML/CSS
+//on créer un nouvel objet à partir de ceux de HTML/CSS
 let terrain = new Terrain($("#terrain"));
+
 let balle = new Balle($("#balle"));
+
 let raquetteGauche = new Raquette($("#raquetteGauche"));
 let raquetteDroite = new Raquette($("#raquetteDroite"));
 
@@ -104,9 +109,9 @@ setInterval(function()
     //section raquette gauche
     raquetteGauche.haut += raquetteGauche.vitesse;
 
-    if(raquetteGauche.haut > terrain.hauteur)
+    if(raquetteGauche.haut + raquetteGauche.hauteur > terrain.hauteur)
     {
-        raquetteGauche.haut = terrain.hauteur;
+        raquetteGauche.haut = terrain.hauteur + raquetteGauche.hauteur;
         raquetteGauche.vitesse = -raquetteGauche.vitesse;
     }
     if(raquetteGauche.haut < 0)
@@ -120,9 +125,9 @@ setInterval(function()
     //section raquette droite
     raquetteDroite.haut += raquetteDroite.vitesse;
 
-    if(raquetteDroite.haut > terrain.hauteur)
+    if(raquetteDroite.haut + raquetteDroite.hauteur > terrain.hauteur)
     {
-        raquetteDroite.haut = terrain.hauteur;
+        raquetteDroite.haut = terrain.hauteur - + raquetteDroite.hauteur;
         raquetteDroite.vitesse = -raquetteDroite.vitesse;
     }
     if(raquetteDroite.haut < 0)
