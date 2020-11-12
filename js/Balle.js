@@ -16,10 +16,7 @@ class Balle
         this.angle = Math.random()*2*Math.PI;
     }
 
-    /**
-     * @param {*} oui 
-     */
-    bouger(oui)
+    bouger()
     {
         this.positionX += Math.cos(this.angle) * this.vitesseX;
         this.positionY += Math.sin(this.angle) * this.vitesseY;
@@ -33,14 +30,12 @@ class Balle
         //droite
         if( (this.positionX + this.largeur) > terrain.largeur)
         {
-            terrain.tilt();
             this.positionX = terrain.largeur - this.largeur;
             this.vitesseX *= -1;
         }
         //gauche
         if(this.positionX < 0)
         {
-            terrain.tilt();
             this.positionX = 0;
             this.vitesseX *= -1;
         }
