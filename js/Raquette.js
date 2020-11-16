@@ -11,7 +11,7 @@ class Raquette
         this.positionX = parseInt($element.css("left"));
         this.positionY = parseInt($element.css("top"));
 
-        this.direction = 1;
+        this.direction = 0;
         this.vitesse = 3;
     }
 
@@ -22,9 +22,19 @@ class Raquette
         this.majHTML();
     }
 
-    changeDirection()
+    monter()
     {
-        this.direction *= -1;
+        this.direction = -1;
+    }
+
+    descendre()
+    {
+        this.direction = 1;
+    }
+
+    arret()
+    {
+        this.direction = 0;
     }
 
     majHTML()
@@ -37,12 +47,12 @@ class Raquette
         if(this.positionY + this.hauteur > terrain.hauteur)
         {
             this.positionY = terrain.hauteur - this.hauteur;
-            this.changeDirection();
+            this.arret();
         }
         if(this.positionY < 0)
         {
             this.positionY = 0;
-            this.changeDirection();
+            this.arret();
         }
     }
 }

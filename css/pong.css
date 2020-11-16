@@ -27,8 +27,13 @@ body
     width: 800px;
     height : 400px;
 }
-.tilt{
-    border-color: rgb(0, 250, 0) !important;
+.tiltHaut
+{
+    border-top-color: rgb(0, 250, 0) !important;
+}
+.tiltBas
+{
+    border-bottom-color: rgb(0, 250, 0) !important;
 }
 
 /** parametrage du ou des "objets" balle **/

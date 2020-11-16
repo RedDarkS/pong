@@ -9,17 +9,32 @@ class Terrain
         this.hauteur = $element.height();
     }
 
-    tilt()
+    tiltHaut()
     {
         //ajouter une classe
-        this.$element.addClass("tilt");
-        let ici = this;
+        this.$element.addClass("tiltHaut");
+        let buffer = this;
 
         setTimeout(
             function()
             {
                 //retirer une classe
-                ici.$element.removeClass("tilt");
+                buffer.$element.removeClass("tiltHaut");
+            },200
+        );
+    }
+
+    tiltBas()
+    {
+        //ajouter une classe
+        this.$element.addClass("tiltBas");
+        let buffer = this;
+
+        setTimeout(
+            function()
+            {
+                //retirer une classe
+                buffer.$element.removeClass("tiltBas");
             },200
         );
     }

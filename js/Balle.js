@@ -42,14 +42,14 @@ class Balle
         //bas
         if( (this.positionY + this.hauteur) > terrain.hauteur)
         {
-            terrain.tilt();
+            terrain.tiltBas();
             this.positionY = terrain.hauteur - this.hauteur;
             this.vitesseY *= -1;
         }
         //haut
         if(this.positionY < 0)
         {
-            terrain.tilt();
+            terrain.tiltHaut();
             this.positionY = 0;
             this.vitesseY *= -1;
         }
