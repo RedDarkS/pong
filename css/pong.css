@@ -1,11 +1,10 @@
 /** id > class **/
-body
-{
+body {
     /** Fond noir, couleur blanche et typographie monospace **/
     background-color: #000000;
     color: #ffffff;
     font-family: monospace;
-    
+
     /** permet de centrer les elements dans la page **/
     display: flex;
     min-height: 100vh;
@@ -16,31 +15,29 @@ body
 }
 
 /** parametrage du ou des "objets" terrain **/
-#terrain
-{
+#terrain {
     position: relative;
 
-    border:1px solid #000;
-    border-top-color:#fff;
-    border-bottom-color:#fff;
-    
+    border: 1px solid #000;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+
     width: 800px;
-    height : 400px;
+    height: 400px;
 }
-.tiltHaut
-{
+
+.tiltHaut {
     border-top-color: rgb(0, 250, 0) !important;
 }
-.tiltBas
-{
+
+.tiltBas {
     border-bottom-color: rgb(0, 250, 0) !important;
 }
 
 /** parametrage du ou des "objets" balle **/
-#balle
-{
+#balle {
     position: absolute;
-    top : 50%;
+    top: 50%;
     left: 50%;
 
     border-radius: 100%;
@@ -50,23 +47,22 @@ body
 }
 
 /** parametrage du ou des "objets" raquette **/
-.raquette
-{
+.raquette {
     position: absolute;
 
     --hauteur: 25%; /** definir une variable **/
 
-    top : calc( 50% - var(--hauteur)/2 ); /** clac, faire des calculs en css // var utiliser la variable **/
+    top: calc(50% - var(--hauteur) / 2); /** clac, faire des calculs en css // var utiliser la variable **/
 
     width: 10px;
     height: var(--hauteur);
     background-color: #fff;
 }
-#droite
-{
+
+#droite {
     right: 1%;
 }
-#gauche
-{
+
+#gauche {
     left: 1%;
 }
