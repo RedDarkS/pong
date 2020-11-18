@@ -32,4 +32,30 @@ class Terrain {
             }, 200
         );
     }
+
+    tiltDroite() {
+        //ajouter une classe
+        this.$element.addClass("tiltDroite");
+        let buffer = this;
+
+        setTimeout(
+            function () {
+                //retirer une classe
+                buffer.$element.removeClass("tiltDroite");
+            }, 200
+        );
+    }
+
+    tiltGauche() {
+        //ajouter une classe
+        this.$element.addClass("tiltGauche");
+        let buffer = this;
+
+        setTimeout(
+            function () {
+                //retirer une classe
+                buffer.$element.removeClass("tiltGauche");
+            }, 200
+        );
+    }
 }

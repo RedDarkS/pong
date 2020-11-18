@@ -1,16 +1,70 @@
 //Classe de creation d'un objet raquette
 class Raquette {
     constructor($element) {
+
         this.$element = $element;
-
-        this.largeur = $element.width();
+        /**
+         *
+         * @type {number}
+         */
         this.hauteur = $element.height();
-
+        /**
+         *
+         * @type {number}
+         */
+        this.largeur = $element.width();
+        /**
+         *
+         * @type {number}
+         */
         this.positionX = parseInt($element.css("left"));
+        /**
+         *
+         * @type {number}
+         */
         this.positionY = parseInt($element.css("top"));
-
+        /**
+         *
+         * @type {number}
+         */
         this.direction = 0;
+        /**
+         *
+         * @type {number}
+         */
         this.vitesse = 3;
+    }
+
+    /**
+     *
+     * @returns {number}
+     */
+    get bas() {
+        return this.positionY + this.hauteur;
+    }
+
+    /**
+     *
+     * @param value
+     */
+    set bas(value) {
+        this.positionY = value - this.hauteur;
+    }
+
+    /**
+     *
+     * @returns {number}
+     */
+    get droite() {
+        return this.positionX + this.largeur;
+    }
+
+    /**
+     *
+     * @param value
+     */
+    set droite(value) {
+        this.positionX = value - this.largeur;
     }
 
     bouger() {
@@ -36,8 +90,8 @@ class Raquette {
     }
 
     limite() {
-        if (this.positionY + this.hauteur > terrain.hauteur) {
-            this.positionY = terrain.hauteur - this.hauteur;
+        if (this.bas > terrain.hauteur) {
+            this.bas = terrain.hauteur;
             this.arret();
         }
         if (this.positionY < 0) {

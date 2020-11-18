@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="511e1d1f-d589-4d69-836d-834bca09bc74" name="Default Changelist" comment="" />
+    <list default="true" id="511e1d1f-d589-4d69-836d-834bca09bc74" name="Default Changelist" comment="oui">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pong.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pong.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Balle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Balle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Raquette.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Raquette.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Terrain.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Terrain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,11 +63,35 @@
       <updated>1605532741538</updated>
       <workItem from="1605532742600" duration="5351000" />
       <workItem from="1605707703947" duration="1534000" />
+      <workItem from="1605709437834" duration="6561000" />
     </task>
+    <task id="LOCAL-00001" summary="oui">
+      <created>1605709547447</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605709547447</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="oui" />
+    <option name="LAST_COMMIT_MESSAGE" value="oui" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1605707924552">
@@ -53,14 +102,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605706879826" />
-    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1605707923024">
+    <state x="493" y="29" width="911" height="989" key="CommitChangelistDialog2" timestamp="1605709504563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605707923024" />
+    <state x="493" y="29" width="911" height="989" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605709504563" />
+    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1605709620517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605709620517" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1605709193248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605709193248" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605709591449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605709591449" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605707583008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

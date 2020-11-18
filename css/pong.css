@@ -33,6 +33,13 @@ body {
 .tiltBas {
     border-bottom-color: rgb(0, 250, 0) !important;
 }
+.tiltGauche {
+    border-left-color: rgb(250, 0, 0) !important;
+}
+
+.tiltDroite {
+    border-right-color: rgb(250, 0, 0) !important;
+}
 
 /** parametrage du ou des "objets" balle **/
 #balle {
