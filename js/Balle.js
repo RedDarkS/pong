@@ -6,7 +6,6 @@ class Balle {
      */
     constructor($element) {
         this.$element = $element;
-
         /**
          *
          * @type {number}
@@ -87,13 +86,17 @@ class Balle {
     limite() {
         //droite
         if ((this.droite) > terrain.largeur) {
+            terrain.tiltDroite();
             this.droite = terrain.largeur;
             this.vitesseX *= -1;
+            this.recentrer();
         }
         //gauche
         if (this.positionX < 0) {
+            terrain.tiltGauche();
             this.positionX = 0;
             this.vitesseX *= -1;
+            this.recentrer();
         }
         //bas
         if (this.bas > terrain.hauteur) {
@@ -107,6 +110,28 @@ class Balle {
             this.positionY = 0;
             this.vitesseY *= -1;
         }
+        //Rebonds sur les raquettes
+        //Gauche
+        if(this.positionX < raquetteGauche.droite){ //si la balle dépasse à gauche de la raquette gauche
+            if(this.bas > raquetteGauche.positionY){ //et si la balle est plus basse que le haut de la raquette
+                if(this.positionY < raquetteGauche.bas){ // et si la balle est plus haute que le bas de la raquette
+                    this.vitesseX *= -1;
+                }
+            }
+        }
+        //Droite
+        if(this.droite > raquetteDroite.positionX){ //si la balle dépasse à droite la raquette droite
+            if(this.bas > raquetteDroite.positionY){ //et si la balle est plus basse que le haut de la raquette
+                if(this.positionY < raquetteDroite.bas){ // et si la balle est plus haute que le bas de la raquette
+                    this.vitesseX *= -1;
+                }
+            }
+        }
+    }
+
+    recentrer() {
+        this.positionX = terrain.largeur / 2 - this.largeur / 2;
+        this.positionY = terrain.hauteur / 2 - this.hauteur / 2;
     }
 
     majHTML() {
