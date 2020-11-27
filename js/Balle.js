@@ -35,18 +35,6 @@ class Balle {
          *
          * @type {number}
          */
-        this.directionX = 0;
-
-        /**
-         *
-         * @type {number}
-         */
-        this.directionY = 0;
-
-        /**
-         *
-         * @type {number}
-         */
         this.vitesseDepart = terrain.largeur / 500;
 
         /**
@@ -71,7 +59,13 @@ class Balle {
          *
          * @type {number}
          */
-        this.angle = Math.random() * 2 * Math.PI;
+        this.buf = Math.random();
+
+        /**
+         *
+         * @type {number}
+         */
+        this.angle = this.defAngle()
     }
 
     /**
@@ -107,6 +101,19 @@ class Balle {
     }
 
     /**
+     *
+     * @returns {number}
+     */
+    defAngle()
+    {
+        return this.buf < 0.5 ?(
+            ((5*Math.PI/4) - Math.random()*(2*Math.PI/4))
+        ):(
+            ((Math.PI/4) - Math.random()*(2*Math.PI/4))
+        );
+    }
+
+    /**
      *Augmente la vitesse de la balle jusqu'à un maximum
      */
     accelerer() {
@@ -127,6 +134,7 @@ class Balle {
         this.positionX = terrain.largeur / 2 - this.largeur / 2;
         this.positionY = terrain.hauteur / 2 - this.hauteur / 2;
 
+        this.angle = this.defAngle();
         this.reinitialiserVitesse();
     }
 
@@ -157,7 +165,8 @@ class Balle {
         if ((this.droite) > terrain.largeur) {
             terrain.tiltDroite();
 
-            joueur1.ajoutScore();
+            joueur0.ajoutScore();
+            this.buf = 0.75;
 
             this.droite = terrain.largeur;
             this.angle = Math.PI - this.angle;
@@ -167,7 +176,8 @@ class Balle {
         if (this.positionX < 0) {
             terrain.tiltGauche();
 
-            joueur0.ajoutScore();
+            joueur1.ajoutScore();
+            this.buf = 0.25;
 
             this.positionX = 0;
             this.angle = Math.PI - this.angle;

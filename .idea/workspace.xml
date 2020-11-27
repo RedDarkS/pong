@@ -19,15 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="511e1d1f-d589-4d69-836d-834bca09bc74" name="Default Changelist" comment="fin exo pour samedi">
-      <change afterPath="$PROJECT_DIR$/js/Joueur.js" afterDir="false" />
+    <list default="true" id="511e1d1f-d589-4d69-836d-834bca09bc74" name="Default Changelist" comment="fin exo pour samedi 27/11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/pong.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pong.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Balle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Balle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Raquette.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Raquette.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Terrain.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Terrain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +71,7 @@
       <workItem from="1606248041180" duration="1185000" />
       <workItem from="1606249253229" duration="2229000" />
       <workItem from="1606469926028" duration="102000" />
-      <workItem from="1606470105010" duration="7452000" />
+      <workItem from="1606470105010" duration="11358000" />
     </task>
     <task id="LOCAL-00001" summary="oui">
       <created>1605709547447</created>
@@ -100,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605716771402</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fin exo pour samedi 27/11">
+      <created>1606514938582</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606514938582</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +122,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="oui" />
     <MESSAGE value="fin exo pour samedi" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin exo pour samedi" />
+    <MESSAGE value="fin exo pour samedi 27/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin exo pour samedi 27/11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1605707924552">
@@ -144,10 +146,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605718276328" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605716785317">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606514953249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605716785317" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606514953249" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605707583008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
