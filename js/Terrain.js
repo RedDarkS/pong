@@ -1,12 +1,30 @@
 //Classe de creation d'un objet terrain
 class Terrain {
+
+    /**
+     *
+     * @param $element
+     */
     constructor($element) {
+        /**
+         *
+         */
         this.$element = $element;
 
+        /**
+         *
+         */
         this.largeur = $element.width();
+
+        /**
+         *
+         */
         this.hauteur = $element.height();
     }
 
+    /**
+     *
+     */
     tiltHaut() {
         //ajouter une classe
         this.$element.addClass("tiltHaut");
@@ -20,6 +38,9 @@ class Terrain {
         );
     }
 
+    /**
+     *
+     */
     tiltBas() {
         //ajouter une classe
         this.$element.addClass("tiltBas");
@@ -33,6 +54,9 @@ class Terrain {
         );
     }
 
+    /**
+     *
+     */
     tiltDroite() {
         //ajouter une classe
         this.$element.addClass("tiltDroite");
@@ -46,6 +70,9 @@ class Terrain {
         );
     }
 
+    /**
+     *
+     */
     tiltGauche() {
         //ajouter une classe
         this.$element.addClass("tiltGauche");

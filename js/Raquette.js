@@ -1,5 +1,10 @@
 //Classe de creation d'un objet raquette
 class Raquette {
+
+    /**
+     *
+     * @param $element
+     */
     constructor($element) {
 
         this.$element = $element;
@@ -67,16 +72,25 @@ class Raquette {
         this.positionX = value - this.largeur;
     }
 
+    /**
+     *
+     */
     bouger() {
         this.positionY += this.vitesse * this.direction;
         this.limite();
         this.majHTML();
     }
 
+    /**
+     *
+     */
     monter() {
         this.direction = -1;
     }
 
+    /**
+     *
+     */
     descendre() {
         this.direction = 1;
     }
@@ -85,6 +99,16 @@ class Raquette {
         this.direction = 0;
     }
 
+    changerCouleur(){
+        this.$element.addClass("tiltRaquette");
+        let buffer = this;
+
+        setTimeout(
+            function(){
+                buffer.$element.removeClass("tiltRaquette");
+            },200
+        );
+    }
     majHTML() {
         this.$element.css("top", this.positionY);
     }
