@@ -65,7 +65,7 @@ class Balle {
          *
          * @type {number}
          */
-        this.angle = this.defAngle()
+        this.angle = this.defAngle();
     }
 
     /**
@@ -106,11 +106,7 @@ class Balle {
      */
     defAngle()
     {
-        return this.buf < 0.5 ?(
-            ((5*Math.PI/4) - Math.random()*(2*Math.PI/4))
-        ):(
-            ((Math.PI/4) - Math.random()*(2*Math.PI/4))
-        );
+        return this.buf < 0.5 ? (5*Math.PI/4) - Math.random()*(2*Math.PI/4) : (Math.PI/4) - Math.random()*(2*Math.PI/4);
     }
 
     /**

@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="511e1d1f-d589-4d69-836d-834bca09bc74" name="Default Changelist" comment="fin exo pour samedi 27/11">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="511e1d1f-d589-4d69-836d-834bca09bc74" name="Default Changelist" comment="J'ai refais des trucs c'est nice">
       <change beforePath="$PROJECT_DIR$/js/Balle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Balle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,7 @@
       <workItem from="1606248041180" duration="1185000" />
       <workItem from="1606249253229" duration="2229000" />
       <workItem from="1606469926028" duration="102000" />
-      <workItem from="1606470105010" duration="11358000" />
+      <workItem from="1606470105010" duration="11681000" />
     </task>
     <task id="LOCAL-00001" summary="oui">
       <created>1605709547447</created>
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606514938582</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="J'ai refais des trucs c'est nice">
+      <created>1606521155997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606521155997</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +129,8 @@
     <MESSAGE value="oui" />
     <MESSAGE value="fin exo pour samedi" />
     <MESSAGE value="fin exo pour samedi 27/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin exo pour samedi 27/11" />
+    <MESSAGE value="J'ai refais des trucs c'est nice" />
+    <option name="LAST_COMMIT_MESSAGE" value="J'ai refais des trucs c'est nice" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1605707924552">
@@ -146,10 +153,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605718276328" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606514953249">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606521262138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606514953249" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606521262138" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605707583008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
