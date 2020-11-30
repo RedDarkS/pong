@@ -28,12 +28,12 @@ class Terrain {
     tiltHaut() {
         //ajouter une classe
         this.$element.addClass("tiltHaut");
-        let buffer = this;
+        let me = this;
 
         setTimeout(
             function () {
                 //retirer une classe
-                buffer.$element.removeClass("tiltHaut");
+                me.$element.removeClass("tiltHaut");
             }, 200
         );
     }
@@ -44,12 +44,12 @@ class Terrain {
     tiltBas() {
         //ajouter une classe
         this.$element.addClass("tiltBas");
-        let buffer = this;
+        let me = this;
 
         setTimeout(
             function () {
                 //retirer une classe
-                buffer.$element.removeClass("tiltBas");
+                me.$element.removeClass("tiltBas");
             }, 200
         );
     }
@@ -60,12 +60,12 @@ class Terrain {
     tiltDroite() {
         //ajouter une classe
         this.$element.addClass("tiltDroite");
-        let buffer = this;
+        let me = this;
 
         setTimeout(
             function () {
                 //retirer une classe
-                buffer.$element.removeClass("tiltDroite");
+                me.$element.removeClass("tiltDroite");
             }, 200
         );
     }
@@ -76,12 +76,12 @@ class Terrain {
     tiltGauche() {
         //ajouter une classe
         this.$element.addClass("tiltGauche");
-        let buffer = this;
+        let me = this;
 
         setTimeout(
             function () {
                 //retirer une classe
-                buffer.$element.removeClass("tiltGauche");
+                me.$element.removeClass("tiltGauche");
             }, 200
         );
     }
