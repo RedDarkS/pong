@@ -35,20 +35,36 @@ let joueur0 = new Joueur($("#Sgauche"));
  */
 let joueur1 = new Joueur($("#Sdroite"));
 
+let son = new Son();
+
 //boucle afin de modifier la position de la balle et des raquettes toutes les 10 millisecondes
 //les if servent à tester les collisions avec les bordures du terrain, et ainsi de faire rebondir la balle ou la laquette
+
+let demarrer = false;
 
 /**
  * Boucle de jeu, permet d'actualiser le déplacement des raquettes et de la balle
  */
 setInterval(function () {
-    //appel de fonction des classes correspondant aux objets
-    balle.bouger();
+    if(demarrer){
+        //appel de fonction des classes correspondant aux objets
+        balle.bouger();
 
-    raquetteGauche.bouger();
-    raquetteDroite.bouger();
+        raquetteGauche.bouger();
+        raquetteDroite.bouger();
+    }
 }, 10);
 
+// $("#btn-jouer").on("mousedown", function (event) {
+//     event.preventDefault(); //je ne vous explique pas pour l'instant à quoi ça sert c'est trop complexe
+//     console.log("tu as appuyé sur $btn-jouer");
+// });
+
+$("#btn-jouer").on("mouseup", function (event) {
+    event.preventDefault();
+    demarrer = true;
+    $("#ecran-debut").addClass("invisible");
+});
 
 //Ouverture des listeners pour écouter quelles touchent sont utilisées
 window.addEventListener("keydown", function (event) {

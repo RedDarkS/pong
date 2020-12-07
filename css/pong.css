@@ -123,26 +123,26 @@ body {
     text-align: center;
     padding: 50px;
 }
-.ecran-debut>*{
+#ecran-debut>*{
     margin : 10px;
 }
-.ecran-debut .touche{
+#ecran-debut .touche{
     display: inline-flex;
     transform: rotate(0deg) !important;
 }
 
 /* disparition de l'écran de début */
-.ecran-debut{
+#ecran-debut{
     transition: all 2s;
     transition-duration: 1s;
     will-change: opacity, filter;
     opacity: 1;
     filter: blur(0px);
 }
-.ecran-debut.invisible{
+#ecran-debut.invisible{
     pointer-events: none;
     opacity: 0;
-    filter: blur(16px);
+    filter: blur(15px);
 }
 
 /* bouton jouer sur l'ecran de début */
@@ -154,3 +154,7 @@ body {
     border-radius: 4px;
     font-weight: bold;
 }
+
+/*.invisible{*/
+/*    display : none;*/
+/*}*/

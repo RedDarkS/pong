@@ -185,6 +185,8 @@ class Balle {
 
             this.bas = terrain.hauteur;
             this.angle = -(this.angle);
+
+            son.playNote();
         }
         //haut
         if (this.positionY < 0) {
@@ -192,6 +194,8 @@ class Balle {
 
             this.positionY = 0;
             this.angle = -(this.angle);
+
+            son.playNote();
         }
         //Rebonds sur les raquettes
         //Gauche
