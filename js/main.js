@@ -63,6 +63,7 @@ setInterval(function () {
 $("#btn-jouer").on("mouseup", function (event) {
     event.preventDefault();
     demarrer = true;
+    son.playNoteDef(0);
     $("#ecran-debut").addClass("invisible");
 });
 

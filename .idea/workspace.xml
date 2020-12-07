@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="511e1d1f-d589-4d69-836d-834bca09bc74" name="Default Changelist" comment="Pour dimanche">
+    <list default="true" id="511e1d1f-d589-4d69-836d-834bca09bc74" name="Default Changelist" comment="ajout son ?">
       <change beforePath="$PROJECT_DIR$/js/Balle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Balle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +76,8 @@
       <workItem from="1606470105010" duration="11681000" />
       <workItem from="1607090263049" duration="1399000" />
       <workItem from="1607345719882" duration="3074000" />
-      <workItem from="1607348810115" duration="1120000" />
+      <workItem from="1607348810115" duration="1297000" />
+      <workItem from="1607350121380" duration="2461000" />
     </task>
     <task id="LOCAL-00001" summary="oui">
       <created>1605709547447</created>
@@ -138,7 +139,8 @@
     <MESSAGE value="J'ai refais des trucs c'est nice" />
     <MESSAGE value="fin cours 30/11" />
     <MESSAGE value="Pour dimanche" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pour dimanche" />
+    <MESSAGE value="ajout son ?" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout son ?" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1605707924552">

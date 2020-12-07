@@ -6,11 +6,11 @@ class Son{
     constructor(){
         //sounds
         createjs.Sound.registerSound("sound/seb-glissade.mp3", "seb-glissade");
-        // createjs.Sound.registerSound("sound/re.mp3", "re");
-        // createjs.Sound.registerSound("sound/mi.mp3", "mi");
-        // createjs.Sound.registerSound("sound/fa.mp3", "fa");
-        // createjs.Sound.registerSound("sound/sol.mp3","sol");
-        // createjs.Sound.registerSound("sound/la.mp3", "la");
+        createjs.Sound.registerSound("sound/Salut.mp3", "Salut");
+        createjs.Sound.registerSound("sound/wilhelm-scream-gaming-sound-effect-hd.mp3", "wilhelm-scream-gaming-sound-effect-hd");
+        createjs.Sound.registerSound("sound/roblox-death-sound_1.mp3", "roblox-death-sound_1");
+        createjs.Sound.registerSound("sound/minecraft_hit_soundmp3converter.mp3","minecraft_hit_soundmp3converter");
+        createjs.Sound.registerSound("sound/jecodeaveclecul.mp3", "jecodeaveclecul");
         // createjs.Sound.registerSound("sound/si.mp3", "si");
         //createjs.Sound.registerSound("sound/pong.mp3", "pong");
     }
@@ -18,9 +18,19 @@ class Son{
      * Joue une note de piano aléatoire
      */
     playNote(){
-        let notes=["seb-glissade"];
+        let notes=["Salut", "wilhelm-scream-gaming-sound-effect-hd", "roblox-death-sound_1","minecraft_hit_soundmp3converter"];
         let note =notes[Math.floor(Math.random() * notes.length)];
         createjs.Sound.play(note);
+    }
+
+    playNoteDef(nombre){
+        let notes=["seb-glissade", "jecodeaveclecul"];
+        createjs.Sound.play(notes[nombre]);
+    }
+
+    stopNoteDef(nombre){
+        let notes=["seb-glissade", "jecodeaveclecul"];
+        createjs.Sound.stop(notes[nombre]);
     }
     /**
      * Joue plusieurs notes ce qui produit un truc assez pété

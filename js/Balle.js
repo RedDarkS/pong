@@ -167,6 +167,9 @@ class Balle {
             this.droite = terrain.largeur;
             this.angle = Math.PI - this.angle;
             this.recentrer();
+
+            son.stopNoteDef(1);
+            son.playNoteDef(1);
         }
         //gauche
         if (this.positionX < 0) {
@@ -178,6 +181,9 @@ class Balle {
             this.positionX = 0;
             this.angle = Math.PI - this.angle;
             this.recentrer();
+
+            son.stopNoteDef(1);
+            son.playNoteDef(1);
         }
         //bas
         if (this.bas > terrain.hauteur) {
@@ -185,8 +191,6 @@ class Balle {
 
             this.bas = terrain.hauteur;
             this.angle = -(this.angle);
-
-            son.playNote();
         }
         //haut
         if (this.positionY < 0) {
@@ -194,8 +198,6 @@ class Balle {
 
             this.positionY = 0;
             this.angle = -(this.angle);
-
-            son.playNote();
         }
         //Rebonds sur les raquettes
         //Gauche
@@ -205,6 +207,8 @@ class Balle {
 
                     this.accelerer();
                     this.angle = Math.PI - this.angle;
+
+                    son.playNote();
 
                     raquetteGauche.changerCouleur();
                 }
@@ -217,6 +221,8 @@ class Balle {
 
                     this.accelerer();
                     this.angle = Math.PI - this.angle;
+
+                    son.playNote();
 
                     raquetteDroite.changerCouleur();
                 }
