@@ -11,14 +11,14 @@ class Son{
         createjs.Sound.registerSound("sound/roblox-death-sound_1.mp3", "roblox-death-sound_1");
         createjs.Sound.registerSound("sound/minecraft_hit_soundmp3converter.mp3","minecraft_hit_soundmp3converter");
         createjs.Sound.registerSound("sound/jecodeaveclecul.mp3", "jecodeaveclecul");
-        // createjs.Sound.registerSound("sound/si.mp3", "si");
+        createjs.Sound.registerSound("sound/waluigi_wahring2mob.mp3", "waluigi_wahring2mob");
         //createjs.Sound.registerSound("sound/pong.mp3", "pong");
     }
     /**
      * Joue une note de piano aléatoire
      */
     playNote(){
-        let notes=["Salut", "wilhelm-scream-gaming-sound-effect-hd", "roblox-death-sound_1","minecraft_hit_soundmp3converter"];
+        let notes=["Salut", "wilhelm-scream-gaming-sound-effect-hd", "roblox-death-sound_1","minecraft_hit_soundmp3converter", "waluigi_wahring2mob"];
         let note =notes[Math.floor(Math.random() * notes.length)];
         createjs.Sound.play(note);
     }
